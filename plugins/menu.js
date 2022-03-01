@@ -7,7 +7,7 @@ let moment = require('moment-timezone')
 const defaultMenu = {
   before: `
 ┌─〔 BOTYNYAKAMU 〕
-├ Hai, *%name!*
+├ Hai👩‍💻, *%name!*
 ├ Memory Used : *${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB*
 └────
 %readmore`.trimStart(),
