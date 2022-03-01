@@ -203,25 +203,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 			return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
                     "listMessage":  {
                         "title": `*${ucapan()}, ${name}*`.trim(),
-                        "description": ` **BOT DI SEWAKAN TIDAK GRTIS!!!!*
-_Kalau mau sewa silahkan tekan link dibwah:_
-======•••
-┏━━⟪ *HARGA MEMB PREMIUM* ⟫━
-┣ • »*BISA JUGA BAYAR PAKAI DANA!!>*
-┣ • »```list harga:!!```
-┣ • »```20.000 sebulan```
-┣ • »```240.000 
-12 bulan```
-┏━━━⟪ *PERATURAN* ⟫
-┣ • »_BAYAR DULU!!_
-┣ • »_tidak menerima hutang_
-┣ • »_ISI DENGAN PULSA/KOUTA<VOUCHER>_ *(IM3)* no DANA:*085828764046* 
-No pulsa: *085828764046*
-
-JANGAN LUPA FOLLOW AKUN ISTAGRAM 
-_Istagram:@botynyakamu_02_
-========TERIMAKASIH======
-```By.Botynyakamu.```*`.trim(),
+                        "description": `*terimakasih*`.trim(),
                         "footerText": "©️Botynyakamu",
                         "buttonText": "*KLIK DISINI >.<*",
                         "listType": "SINGLE_SELECT",
