@@ -41,13 +41,13 @@ global.APIKeys = { // APIKey nya disini
 }
 
 // Sticker WM
-global.packname = 'BotNyaKamu'
+global.packname = 'BotyNyaKamu'
 global.author = 'loppyuuu<3'
 
 global.wait = 'sedang diproses'
 global.eror = '「❗」Server ERROR!'
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
-global.watermark = '©Botnyakamu' //change the watermark 
+global.watermark = '©Botynyakamu' //change the watermark 
 global.image = 'https://telegra.ph/file/bad012d3380804c06bb4a.jpg' //change the image
 global.thumbfoto = 'https://telegra.ph/file/bad012d3380804c06bb4a.jpg'
 // image
