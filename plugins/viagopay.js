@@ -1,7 +1,7 @@
 let handler  = async (m, { conn, usedPrefix: _p }) => {
 let info = `╠═〘 PEMBAYARAN 〙 ═
-╠═ Untuk Pembayaran Via GOPAY
-╠➥ *085730903853*
+╠═ Untuk Pembayaran Via DANA
+╠➥ *085828764046*
 ║- Chat Owner Terlebebih
 ║ Dahulu
 ╠═〘 Fitur 〙 ═
@@ -20,8 +20,8 @@ let info = `╠═〘 PEMBAYARAN 〙 ═
 ╠➥ *DAN 200 LEBIH*
 ║   *FITUR LAINNYA*
 ║ 
-╠═ ©2021 wabot-aq
-╠═ Scrip original by Nurutomo
+╠═ ISTAGRAM
+╠═ https://www.instagram.com/botynyakamu_02
 ╠═〘 R-Txzy 〙 ═
 `.trim()
 
