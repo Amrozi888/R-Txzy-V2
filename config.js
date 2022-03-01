@@ -48,8 +48,8 @@ global.wait = 'sedang diproses'
 global.eror = '「❗」Server ERROR!'
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
 global.watermark = '©Botnyakamu' //change the watermark 
-global.image = 'https://i.pinimg.com/736x/ab/ee/46/abee4623346cbf016b3cda64bee000d5.jpg' //change the image
-global.thumbfoto = 'https://i.pinimg.com/736x/ab/ee/46/abee4623346cbf016b3cda64bee000d5.jpg'
+global.image = 'https://telegra.ph/file/bad012d3380804c06bb4a.jpg' //change the image
+global.thumbfoto = 'https://telegra.ph/file/bad012d3380804c06bb4a.jpg'
 // image
 global.bank = 'https://telegra.ph/file/d5ddf4cc627bb0e6bc420.jpg'
 global.kandang = 'https://telegra.ph/file/67a6ee607d03a4e52757d.jpg'
