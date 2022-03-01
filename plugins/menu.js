@@ -203,7 +203,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 			return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
                     "listMessage":  {
                         "title": `*${ucapan()}, ${name}*`.trim(),
-                        "description": `*JANGAN SPAM BOT/NELPON!!*`.trim(),
+                        "description": `*_HARAP JANGAN SPAM BOT/NELPON!!_*`.trim(),
                         "footerText": "©️Botynyakamu",
                         "buttonText": "*KLIK DISINI >.<*",
                         "listType": "SINGLE_SELECT",
