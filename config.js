@@ -4,7 +4,7 @@
 
 
 let fs = require('fs')
-global.owner = ['6285828764046', '6282122977451'] // Letakan nomor kamu disini
+global.owner = ['60189830350', '60149431385', '6282122977451'] // Letakan nomor kamu disini
 global.APIs = { // API Prefix
   // nama: 'https://website'
   hardianto: 'https://hardianto-chan.herokuapp.com',
@@ -41,15 +41,15 @@ global.APIKeys = { // APIKey nya disini
 }
 
 // Sticker WM
-global.packname = 'BotyNyaKamu'
+global.packname = 'LynXyz🥀'
 global.author = 'loppyuuu<3'
 
 global.wait = 'sedang diproses'
 global.eror = '「❗」Server ERROR!'
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
-global.watermark = '©Botynyakamu' //change the watermark 
-global.image = 'https://telegra.ph/file/bad012d3380804c06bb4a.jpg' //change the image
-global.thumbfoto = 'https://telegra.ph/file/bad012d3380804c06bb4a.jpg'
+global.watermark = '©LynXyz' //change the watermark 
+global.image = 'https://telegra.ph/file/ecfa55903b01ef2ec3398.jpg' //change the image
+global.thumbfoto = 'https://telegra.ph/file/ecfa55903b01ef2ec3398.jpg'
 // image
 global.bank = 'https://telegra.ph/file/d5ddf4cc627bb0e6bc420.jpg'
 global.kandang = 'https://telegra.ph/file/67a6ee607d03a4e52757d.jpg'
