@@ -11,12 +11,12 @@ let handler = async(m, { conn }) => {
 Silahkan klik pada "List Harga" untuk melihat list.
 
 Pembayaran:
-Pulsa : 085828764046
-Dana: 085828764046
+Digi : 60149431385
+Umobile: 60189830350
 `.trim()
     const button = {
         buttonText: 'List Harga',
-        description: silahkan cek katalog owner https://wa.me/p/5041857039194512/6285828764046,
+        description: silahkan cek katalog owner https://wa.me/p/5041857039194512/62858228754046,
         sections:  [{title: "Silahkan di pilih", rows: [
         {title: '2 Bulan', description: "Rp40.000\nSewa bot tanpa batasan waktu.", rowId:".masuk"},
         {title: '1 Bulan', description: "Rp20.000\nSewa bot selama 1 bulan.", rowId:".masuk"},
