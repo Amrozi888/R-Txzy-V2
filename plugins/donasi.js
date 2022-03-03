@@ -4,14 +4,14 @@ let fetch = require('node-fetch')
 let handler = async (m, { conn }) => await conn.sendButtonLoc(m.chat, await (await fetch(thumbfoto)).buffer(), `
 *Allo kak/bang bantu donasi yuk supaya bot on 24 jam👋*
 ╔═══════════════════
-║ _*DONASI UNTUK*_ BOTYNYAKAMU
+║ _*DONASI UNTUK*_ LynXyz
 ╠═══════════════════
 ║╭──❉ 〔 *𝗗𝗢𝗡𝗔𝗦𝗜* 〕 ❉──────
-║│➸ *DANA* : 085828764046
-║│➸ *PULSA*: 085828764046
+║│➸ *DIGI* : 60149431385
+║│➸ *UMOBILE*: 60189830350
 ║│➸ *GOPAY*: _*GAK ADA GOPAY GW MAH*_
 ║╰──────────────────
-╰═════by.rozi
+╰═════by.LynXyz
 `.trim(), watermark, 'MENU BOT', '.menu', m)
 handler.help = ['donasi']
 handler.tags = ['info']
