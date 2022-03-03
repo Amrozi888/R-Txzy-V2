@@ -15,8 +15,8 @@ handler.all = async function (m, { isBlocked }) {
     try {
         if (m.mentionedJid.includes(this.user.jid) && m.isGroup) {
             await this.send2Button(m.chat,
-                isBanned ? 'BOTYNYAKAMU tidak aktif' : banned ? 'kamu dibanned' : 'BOTYNYAKAMU disini',
-                '©Botynyakamu',
+                isBanned ? 'LynXyz tidak aktif' : banned ? 'kamu dibanned' : 'LynXyz disini',
+                '©BLynXyz',
                 isBanned ? 'Unban' : banned ? 'Pemilik Bot' : 'Menu',
                 isBanned ? '.unban' : banned ? '.owner' : '.?',
                 m.isGroup ? 'Ban' : isBanned ? 'Unban' : 'Donasi',
@@ -35,14 +35,12 @@ handler.all = async function (m, { isBlocked }) {
 ╠➥ *Sc Bot* :        *Masih Beta*
 ║
 ╠═〘 PEMBAYARAN 〙 ═
-╠➥ Dana, Dan Pulsa
+╠➥ Digi, Dan umobile
 ║
 ╠═ Tertarik Untuk Beli Bot Ini?
 ╠➥Ketuk Tombol Di Bawah Ya
 ║
-╠═ ISTAGRAM
-╠═ https://www.instagram.com/botynyakamu_02
-╠═〘 Botynyakamu 〙 ═`.trim(), '©BOTYNYAKAMU', 'Dana', '#viadana', 'Pulsa', '#viapulsa', m)
+╠═〘 LynXyz 〙 ═`.trim(), '©LYNXYZ', 'DIGI', '#viadigi', 'umobile', '#viaumobile', m)
 }
 
     // salam
