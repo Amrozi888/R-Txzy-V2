@@ -1,6 +1,6 @@
 const contacts = [
-  ['6285828764046', ' owner-botynyakamu'],
-  ['6282122977451', ' botynyakamu'],
+  ['60189830350', ' owner-LynXyz'],
+  ['6282122977451', ' creator'],
 ]
 function handler(m) {
   m.reply('Ada perlu apa kak cari owner?, chat *P* tidak akan di balas')
