@@ -1,6 +1,6 @@
 const contacts = [
-  ['6285828764046', ' owner-ZIFABOTZ'],
-  ['6282122977451', ' BOT ME'],
+  ['60147751029', ' owner arybotz'],
+  ['6285828764046', ' creator bot'],
 ]
 function handler(m) {
   m.reply('Ada perlu apa kak cari owner?, Mau donasi,sewa bot? Kalau enggak Jangan spam WhatsApp owner')
