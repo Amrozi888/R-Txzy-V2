@@ -6,7 +6,7 @@ let fetch = require('node-fetch')
 let moment = require('moment-timezone')
 const defaultMenu = {
   before: `
-┌─〔 BOTYNYAKAMU 〕
+┌─〔 ARYBOTZ 〕
 ├ Hai👩‍💻, *%name!*
 ├ Memory Used : *${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB*
 └────
@@ -204,7 +204,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                     "listMessage":  {
                         "title": `*${ucapan()}, ${name}*`.trim(),
                         "description": `*_DI HARAPKAN JANGAN MENELPON/SPAM BOT!!_*`.trim(),
-                        "footerText": "©️Botynyakamu",
+                        "footerText": "©️arybotz",
                         "buttonText": "*KLIK DISINI >.<*",
                         "listType": "SINGLE_SELECT",
                         "sections": [
