@@ -15,8 +15,8 @@ handler.all = async function (m, { isBlocked }) {
     try {
         if (m.mentionedJid.includes(this.user.jid) && m.isGroup) {
             await this.send2Button(m.chat,
-                isBanned ? 'LynXyz tidak aktif' : banned ? 'kamu dibanned' : 'LynXyz disini',
-                '©BLynXyz',
+                isBanned ? 'arybotz tidak aktif' : banned ? 'kamu dibanned' : 'arybotz disini',
+                '©arybotz',
                 isBanned ? 'Unban' : banned ? 'Pemilik Bot' : 'Menu',
                 isBanned ? '.unban' : banned ? '.owner' : '.?',
                 m.isGroup ? 'Ban' : isBanned ? 'Unban' : 'Donasi',
@@ -29,9 +29,9 @@ handler.all = async function (m, { isBlocked }) {
     // ketika ada yang invite/kirim link grup di chat pribadi
     if ((m.mtype === 'groupInviteMessage' || m.text.startsWith('https://chat') || m.text.startsWith('Buka tautan ini')) && !m.isBaileys && !m.isGroup) {
         this.send2ButtonLoc(m.chat, await (await fetch(fla + 'sewa bot')).buffer(), `╠═〘 Beli Bot 〙 ═
-╠➥ *1 Bulan* :      *Rp 20000*
-╠➥ *2 Bulan* : *Rp 40000*
-╠➥ *8 Bulan* :   *Rp 160000*
+╠➥ *1 Bulan* :      *RM 5*
+╠➥ *2 Bulan* : *RM 10*
+╠➥ *8 Bulan* :   *RM 20*
 ╠➥ *Sc Bot* :        *Masih Beta*
 ║
 ╠═〘 PEMBAYARAN 〙 ═
@@ -40,7 +40,7 @@ handler.all = async function (m, { isBlocked }) {
 ╠═ Tertarik Untuk Beli Bot Ini?
 ╠➥Ketuk Tombol Di Bawah Ya
 ║
-╠═〘 LynXyz 〙 ═`.trim(), '©LYNXYZ', 'DIGI', '#viadigi', 'umobile', '#viaumobile', m)
+╠═〘 arybotz 〙 ═`.trim(), '©arybotz', 'Maxis', '#viamaxis', 'Topup', '#viatopup', m)
 }
 
     // salam
