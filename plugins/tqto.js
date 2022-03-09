@@ -5,6 +5,7 @@ BIG THANKS TO
 • Allah swt
 • My ortu
 • Nurutomo
+• Rozi 
 • Xteam
 • AlyaaXzy 
 • BOTCAHX
