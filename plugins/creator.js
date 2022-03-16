@@ -1,19 +1,80 @@
 const { MessageType } = require('@adiwajshing/baileys')
 const PhoneNumber = require('awesome-phonenumber')
-let handler = async (m, { conn, args, usedPrefix, command }) => {
-  await conn.sendMessage(m.chat, {
+async function handler(m) {
+  let name = '@⳹ ❋ཻུ۪۪CREATOR ZIFABOTZ⳹ ❋ཻུ۪۪)'
+  number = owner[0].replace(/[^0-9]/g, '')
+  let njid = number + '@s.whatsapp.net'
+  let onW = await this.isOnWhatsApp(njid) || { isBusiness: false }
+
+  let name2 = ' @⳹ ❋ཻུ۪۪CREATOR ZIFABOTZ⳹ ❋ཻུ۪۪)'
+  number2 = owner[1].replace(/[^0-9]/g, '')
+  let njid2 = number2 + '@s.whatsapp.net'
+  let onW2 = await this.isOnWhatsApp(njid2) || { isBusiness: false }
+
+  let name3 = '@⳹ ❋ཻུ۪۪CREATOR ZIFABOTZ⳹ ❋ཻུ۪۪)'
+  number3 = owner[2].replace(/[^0-9]/g, '')
+  let njid3 = number3 + '@s.whatsapp.net'
+  let onW3 = await this.isOnWhatsApp(njid3) || { isBusiness: false }
+
+let name4 = '@⳹ ❋ཻུ۪۪CREATOR ZIFABOTZ⳹ ❋ཻུ۪۪)'
+  number4 = owner[3].replace(/[^0-9]/g, '')
+  let njid4 = number4 + '@s.whatsapp.net'
+  let onW4 = await this.isOnWhatsApp(njid4) || { isBusiness: false }
+  this.send2Button(m.chat, `*Ngapain cari owner??*\n\nMau donasi/sewa bot ya:v.\nDi harapkan tidak menelpon/menyepam no owner.`, name4, 'Menu', '.menu', 'Profile', '.profile', m)
+  this.sendMessage(m.chat, {
     contacts: [{
-    "displayName": "ᴏᴡɴᴇʀ",
-      "vcard": "BEGIN:VCARD\nVERSION:3.0\nN:Arybotz;Owner;;;\nFN:Owner Ary Botz\nitem1.TEL;waid=60147751029:60147751029\nitem1.X-ABLabel:📍 Owner\nitem2.EMAIL;type=INTERNET:noeldaniel400@gmail.com\nitem2.X-ABLabel:💌 Email\nitem3.URL:https://hardianto.xyz/\nitem3.X-ABLabel:📮 Rest Api\nitem4.ADR:;;🇲🇾 Malaysia;;;;\nitem4.X-ABADR:ac\nitem4.X-ABLabel:🌍 Region | Malaysia 🇲🇾\nitem5.X-ABLabel:───────[ ARYBOT ]───────\nEND:VCARD"
-  }, {
-    "displayName": "ᴏᴡɴᴇʀ",
-      "vcard": "BEGIN:VCARD\nVERSION:3.0\nN:Run;Jasa;;;\nFN:Creator\nitem1.TEL;waid=6285828764046:6285828764046\nitem1.X-ABLabel:📍 Creator\nitem2.EMAIL;type=INTERNET:anidaanida59@gmail.com\nitem2.X-ABLabel:💌 Email\nitem3.URL:https://hardianto.xyz/\nitem3.X-ABLabel:📮 Rest Api\nitem4.ADR:;;🇮🇩 Indonesia;;;;\nitem4.X-ABADR:ac\nitem4.X-ABLabel:🌍 Region | Kalimantan Barat 🇮🇩\nitem5.X-ABLabel:───────[ JASARUN ]───────\nEND:VCARD"
-  }]
+      displayname: name, vcard: `
+BEGIN:VCARD
+VERSION:3.0
+N:;${name.replace(/\n/g, '\\n')};;;
+FN:${name.replace(/\n/g, '\\n')}
+TEL;type=CELL;type=VOICE;waid=${number}:${PhoneNumber('+' + number).getNumber('international')}${onW.isBusiness ? `
+X-WA-BIZ-NAME:${(this.contacts[njid].vname || this.getName(njid)).replace(/\n/, '\\n')}
+X-WA-BIZ-DESCRIPTION:${((await this.getBusinessProfile(njid)).description || '').replace(/\n/g, '\\n')}
+` : ''}
+END:VCARD
+`.trim()
+    }, {
+      displayname: name2, vcard: `
+BEGIN:VCARD
+VERSION:3.0
+N:;${name2.replace(/\n/g, '\\n')};;;
+FN:${name2.replace(/\n/g, '\\n')}
+TEL;type=CELL;type=VOICE;waid=${number2}:${PhoneNumber('+' + number2).getNumber('international')}${onW2.isBusiness ? `
+X-WA-BIZ-NAME:${(this.contacts[njid2].vname || this.getName(njid2)).replace(/\n/, '\\n')}
+X-WA-BIZ-DESCRIPTION:${((await this.getBusinessProfile(njid2)).description || '').replace(/\n/g, '\\n')}
+` : ''}
+END:VCARD
+`.trim()
+    }, {displayname: name3, vcard: `
+BEGIN:VCARD
+VERSION:3.0
+N:;${name3.replace(/\n/g, '\\n')};;;
+FN:${name3.replace(/\n/g, '\\n')}
+TEL;type=CELL;type=VOICE;waid=${number3}:${PhoneNumber('+' + number3).getNumber('international')}${onW3.isBusiness ? `
+X-WA-BIZ-NAME:${(this.contacts[njid3].vname || this.getName(njid3)).replace(/\n/, '\\n')}
+X-WA-BIZ-DESCRIPTION:${((await this.getBusinessProfile(njid3)).description || '').replace(/\n/g, '\\n')}
+` : ''}
+END:VCARD
+`.trim()
+    }, {
+      displayname: name4, vcard: `
+BEGIN:VCARD
+VERSION:3.0
+N:;${name4.replace(/\n/g, '\\n')};;;
+FN:${name4.replace(/\n/g, '\\n')}
+TEL;type=CELL;type=VOICE;waid=${number4}:${PhoneNumber('+' + number4).getNumber('international')}${onW4.isBusiness ? `
+X-WA-BIZ-NAME:${(this.contacts[njid4].vname || this.getName(njid4)).replace(/\n/, '\\n')}
+X-WA-BIZ-DESCRIPTION:${((await this.getBusinessProfile(njid4)).description || '').replace(/\n/g, '\\n')}
+` : ''}
+END:VCARD
+`.trim()
+    }]
   }, MessageType.contactsArray, { quoted: m })
 }
 handler.help = ['owner', 'creator']
 handler.tags = ['info']
 
-handler.command = /^(owner)$/i
+handler.command = /^(owner|creator)$/i
 
 module.exports = handler
