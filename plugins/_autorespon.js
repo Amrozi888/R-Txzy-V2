@@ -1,5 +1,7 @@
 let fs = require('fs')
 let fetch = require('node-fetch')
+let wm = global.botwm
+let logo = global.logo
 let handler = m => m
 
 handler.all = async function (m, { isBlocked }) {
@@ -15,12 +17,12 @@ handler.all = async function (m, { isBlocked }) {
     try {
         if (m.mentionedJid.includes(this.user.jid) && m.isGroup) {
             await this.send2Button(m.chat,
-                isBanned ? 'arybotz tidak aktif' : banned ? 'kamu dibanned' : 'arybotz disini',
-                '©arybotz',
-                isBanned ? 'Unban' : banned ? 'Pemilik Bot' : 'Menu',
-                isBanned ? '.unban' : banned ? '.owner' : '.?',
-                m.isGroup ? 'Ban' : isBanned ? 'Unban' : 'Donasi',
-                m.isGroup ? '.ban' : isBanned ? '.unban' : '.donasi', m)
+                isBanned ? 'Zifabotz lagi cape (・へ・)' : banned ? 'kamu dibanned' : 'APA OI NGETAG” GW?!!',
+                '',
+                isBanned ? 'Unban' : banned ? 'Pemilik Bot' : '⋮☰ Menu',
+                isBanned ? '.unban' : banned ? '.owner' : '.menu',
+                m.isGroup ? 'Owner' : isBanned ? 'Donasi' : 'Donasi',
+                m.isGroup ? '.owner' : isBanned ? '.donasi' : '.donasi', m)
         }
     } catch (e) {
         return
@@ -28,26 +30,24 @@ handler.all = async function (m, { isBlocked }) {
 
     // ketika ada yang invite/kirim link grup di chat pribadi
     if ((m.mtype === 'groupInviteMessage' || m.text.startsWith('https://chat') || m.text.startsWith('Buka tautan ini')) && !m.isBaileys && !m.isGroup) {
-        this.send2ButtonLoc(m.chat, await (await fetch(fla + 'sewa bot')).buffer(), `╠═〘 Beli Bot 〙 ═
-╠➥ *1 Bulan* :      *RM 5*
-╠➥ *2 Bulan* : *RM 10*
-╠➥ *8 Bulan* :   *RM 20*
-╠➥ *Sc Bot* :        *Masih Beta*
-║
-╠═〘 PEMBAYARAN 〙 ═
-╠➥ Digi, Dan umobile
-║
-╠═ Tertarik Untuk Beli Bot Ini?
-╠➥Ketuk Tombol Di Bawah Ya
-║
-╠═〘 arybotz 〙 ═`.trim(), '©arybotz', 'Maxis', '#viamaxis', 'Topup', '#viatopup', m)
+        this.send2ButtonLoc(m.chat, logo, `
+╭━━〔 List Sewa〕━✧
+│⬦ *1 Bulan* :      *Rp 15.000*
+│⬦ *4 bulan* :      *Rp 25.000*
+│⬦ *8 bulan* :      *Rp 40.000*
+┝━━〔Payment〕━✧
+│⬦ Dana
+│⬦ Gopay
+│⬦ Pulsa
+╰━━━✧
+Note: Syarat dan Ketentuan mungkin berlaku`.trim(), wm, 'Menu', '#menu', 'Owner', '#owner', m)
 }
 
     // salam
-    let reg = /(ass?alam|اَلسَّلاَمُ عَلَيْكُمْ|السلام عليکم)/i
+    let reg = /(terima?kasih|makasih|maacih|tengkyuh)/i
     let isSalam = reg.exec(m.text)
     if (isSalam && !m.fromMe) {
-        this.sendSticker(m.chat, fs.readFileSync('./src/salam.webp'), m, {sendEphemeral: true})
+        m.reply(`Sama-sama, , （ ・∀・）`)
     }
 
     // backup db
@@ -70,7 +70,7 @@ handler.all = async function (m, { isBlocked }) {
     if (new Date() * 1 - setting.status > 1000) {
         let _uptime = process.uptime() * 1000
         let uptime = clockString(_uptime)
-        await this.setStatus(`Aktif selama⌚ ${uptime} | Mode: ${global.opts['self'] ? 'Private' : setting.groupOnly ? 'Hanya Grup' : 'Publik'} |ARYBOTZ`).catch(_ => _)
+        await this.setStatus(`Im zifabotz 🤖 || ⏰ Aktif selama ${uptime} |(*delay*🌕)| 👥 User : ${Object.keys(global.db.data.users).length} User || 🎐 Mode: ${global.opts['self'] ? 'Private' : setting.groupOnly ? 'Hanya Grup' : 'Publik by.rozi'}`).catch(_ => _)
         setting.status = new Date() * 1
     }
 
